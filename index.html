@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Solving || TASK3</title>
+
+
+
+    <script>
+        //Ex 1:
+
+        const arr = [1, 2, 3, 4, 5, 6];
+
+        function filterEvenNumbers(arr) {
+            return arr.filter(num => num % 2 === 0);
+        }
+        document.write("The even element in the array is:    " + filterEvenNumbers(arr));
+
+        // <<<=========================== END OF EX1 =================================================>>>
+
+
+        //Ex 2 :
+
+        function findLargestNumber() {
+            var array = [50, 10, 30, 9, 15];
+            var max = array[0];
+
+            for (var i = 1; i < array.length; i++) {
+                if (array[i] > max) {
+                    max = array[i];
+                }
+            }
+
+            document.write("<br>The maximum element in the array is: " + max);
+        }
+
+        findLargestNumber();
+
+
+        // <<<=========================== END OF EX1 =================================================>>>
+
+
+        // Ex 3 :
+
+        function reverseString() {
+            var str = "TEST";
+            var reversedString = str.split("").reverse().join("");
+
+            document.write("<br>The reversed text is: " + reversedString);
+        }
+
+        reverseString();
+
+        // <<<=========================== END OF EX1 =================================================>>>
+
+
+        // Ex4 :
+
+        const Dup = [1, 2, 2, 3, 4, 4, 5];
+
+        function removeDuplicates(Dup) {
+            return [...new Set(Dup)];
+        }
+        document.write("<br>The array with duplicates removed is: " + removeDuplicates(Dup));
+
+        // <<<=========================== END OF EX1 =================================================>>>
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
